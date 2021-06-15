@@ -10,7 +10,7 @@ import { AboutComponent } from './pages/about-page/about/about.component';
   declarations: [
     AppComponent,
     InitComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

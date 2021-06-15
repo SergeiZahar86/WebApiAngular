@@ -3,8 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-init',
   templateUrl: './init.component.html',
-  styles: [
-  ]
+  //styleUrls: ['./init.component.scss']
 })
 export class InitComponent implements OnInit {
 
@@ -13,4 +12,8 @@ export class InitComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showChange($event: MouseEvent) {
+    /*let myDialog:any = <any>document.getElementsByClassName("detail");
+    myDialog.toggleClass('open');*/
+  }
 }

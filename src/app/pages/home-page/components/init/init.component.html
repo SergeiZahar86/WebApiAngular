@@ -1,1 +1,91 @@
-<p>init works!</p>
+  <h1>
+    The Star Wars
+  </h1>
+  <p>
+    (The Star Wars data: People and Vehicles)
+  </p>
+  <input type="search" class="light-table-filter filter" data-table="order-table" placeholder="Filter">
+  <h2></h2>
+  <main>
+    <table class="order-table table">
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>ФИО</th>
+          <th>Пол</th>
+          <th>Дата рождения</th>
+          <th>Адрес</th>
+          <th>Телефон</th>
+          <th>Правка</th>
+          <th>Удаление</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan='11'>Year: 2021</th>
+        </tr>
+      </tfoot>
+      <tbody id="table-main">
+        <tr>
+          <td>1</td>
+          <td>Александр Иванович Калиногорский</td>
+          <td>мужской</td>
+          <td>25.04.1986</td>
+          <td>г.Новокузнецк ул.Черноморская д.55 кв.44</td>
+          <td>89539999999</td>
+          <td class="select">
+            <a class="button" (click)="showChange($event)" id="1" data-bs-toggle="modal" href='#'>Изменить</a>
+          </td>
+          <td class="select">
+            <a class="button" href='#'>Удалить</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="detail modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <h1>
+        Vehicles
+      </h1>
+      <table>
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Дата</th>
+            <th>Тип посещения</th>
+            <th>Диагноз</th>
+            <th>Правка</th>
+            <th>Удаление</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th colspan='12'>
+              Year: 2021
+            </th>
+          </tr>
+        </tfoot>
+        <tbody id="table-vehicles">
+          <tr>
+            <td>1</td>
+            <td>30.05.2021</td>
+            <td>первичный</td>
+            <td>Воспаление легких</td>
+            <td class="select">
+              <a class="button" id="2" href='#'>Изменить</a>
+            </td>
+            <td class="select">
+              <a class="button"  href='#'>Удалить</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class='detail-nav'>
+        <button class='close'>
+          Close
+        </button>
+      </div>
+    </div>
+  </main>
+  <div class="container-load">
+    <div class="container-load__loader">Loading...</div>
+  </div>
